@@ -109,12 +109,12 @@ export const Scroll_down = styled.a`
     transition: 0.3s;
     background: url(${srcl}) no-repeat center right;
     background-size: contain;
-    :hover {
-        opacity: 0.7;
-    }
 `;
 
 export const Scroll_down_cont = styled.div`
     display: flex;
     flex-direction: row;
+    :hover {
+        opacity: 0.7;
+    }
 `;

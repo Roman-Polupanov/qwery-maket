@@ -42,12 +42,18 @@ export const Section_col_cont = styled.div`
 export const Arrow_right_cont = styled.div`
     display: flex;
     flex-direction: row;
+    color: #FBD784;
+    :hover {
+        opacity: 0.7;
+    }
 `
 
 export const Arrow_right = styled.a`
     width: 1.4rem;
     height: 1rem;
     cursor: pointer;
-    background: url(${rght}) no-repeat center right;
+    padding-bottom: 1em;
+    background: url(${rght}) no-repeat center center;
     background-size: contain;
+    
 `;
