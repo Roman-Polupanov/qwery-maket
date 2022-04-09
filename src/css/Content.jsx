@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import rght from '../images/icons/arrow_rightward.svg'
-import img from '../images/enjoy.jpg'
+import enjoy from '../images/enjoy.jpg'
 
 export const Content = styled.div`
     padding: 0 4.7rem 4.7rem;
@@ -17,7 +17,8 @@ export const Section_cols = styled.section`
 
 
 export const Section_col_image = styled.div`
-    background-image: url(${img}) no-repeat;
+    background-image: url(${enjoy});
+
 `;
 
 export const Main_title_small = styled.div`
@@ -31,9 +32,6 @@ export const Section_col = styled.div`
    }
    &:last-child {
        width: 44%;
-   }
-   &Section_col_image {
-       width: 100%;
    }
 `;
 
