@@ -8,6 +8,7 @@ export const Body_h = styled.body`
     background-size: 100% auto;
     color: #fff;
     font: 18px/1.7 'Open Sans', sans-serif;
+    background-color: black;
 `;
 
 export const A_link = styled.a`

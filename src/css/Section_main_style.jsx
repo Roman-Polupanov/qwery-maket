@@ -20,7 +20,7 @@ export const Main_title = styled.div`
     margin-bottom: 6.2em;
 `;
 
-export const Main_title__summary = styled.div`
+export const Main_title__summary = styled.span`
     font-weight: 700;
     color:#FBD784;
     text-transform: uppercase;
@@ -101,7 +101,7 @@ export const Icon__twitter = styled.div`
     background-size: contain;
 `;
 
-export const Scroll_down = styled.ul`
+export const Scroll_down = styled.a`
     width: 1.3rem;
     height: 1.7rem;
     margin: 0.1em 0 0 0.5em;
@@ -114,7 +114,7 @@ export const Scroll_down = styled.ul`
     }
 `;
 
-export const Scroll_down_cont = styled.ul`
+export const Scroll_down_cont = styled.div`
     display: flex;
     flex-direction: row;
 `;
