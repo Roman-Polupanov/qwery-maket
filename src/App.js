@@ -1,79 +1,78 @@
-import './css/index.css'
+
 import './css/reset.css'
-import { A_link, Body_html, Cover_space, Header_content, Header_q, Main_nav } from './css';
+import { A_link, Body_h, Cover_space, Header_content, Header_q, Logo, Logo_title, Main_nav, Main_nav__link, Main_nav__list, Search, Search_icon, Search__form } from './css/Header_style';
+import { Main_title, Main_title__summary, Section_main, Main_title__text, Main_title__text_regular, Social_networks, Social_networks__title, Social_networks__item, Social_networks__link, Icon__instagram, Icon__facebook, Icon__twitter, Social_networks__list, Scroll_down_cont, Scroll_down } from './css/Section_main_style';
 
 function App() {
   return (
-    <div className="App">
-      <Body_html>
-        <Cover_space>
-          <Header_q>
-            <Header_content>
-              <A_link class="logo" href="/">
-                <h1 class="logo__title">QWERy</h1>
-              </A_link>
-              <Main_nav>
-                <ul class="main-nav__list">
-                  <li class="main-nav__item">
-                    <A_link class="main-nav__link main-nav__link_active" href="#">Information</A_link>
-                  </li>
+    <Body_h>
+      <Cover_space>
+        <Header_q>
+          <Header_content>
+            <A_link class="logo" href="/">
+              <Logo>
+                <Logo_title>QWERy</Logo_title>
+              </Logo>
 
-                  <li>
-                    <A_link class="main-nav__link" href="#">About us</A_link>
-                  </li>
+            </A_link>
+            <Main_nav>
+              <Main_nav__list>
+                <Main_nav__link>
+                  <A_link href="#">Information</A_link>
+                </Main_nav__link>
 
-                  <li>
-                    <A_link class="main-nav__link" href="#">Culture</A_link>
-                  </li>
-                </ul>
-              </Main_nav>
-              <label for="name" class="search">
-                <div class="search__icon" src="#"></div>
-                <input class="search__form" type="text" placeholder="Search" />
-              </label>
-            </Header_content>
-          </Header_q>
-        </Cover_space>
+                <Main_nav__link>
+                  <A_link href="#">About us</A_link>
+                </Main_nav__link>
 
-        <section class="section section-main">
-          <div class="section-main">
-            <div class="main-title">
-              <div class="main-title__summary">Explore the Nature Beauty
-              </div>
-              <h1 class="main-title__text">Discover
-                <span class="main-title__text_regular">Wonderful Indonesia</span>
-              </h1>
-            </div>
-            <div class="social-networks">
-              <h3 class="social-networks__title">Follow us</h3>
-              <ul class="social-networks__list">
-                <li class="social-networks__item">
-                  <a class="social-networks__link" href="#">
-                    <div class="icon__instagram"></div>
-                  </a>
-                </li>
-                <li class="social-networks__item">
-                  <a class="social-networks__link" href="#">
-                    <div class="icon__twitter"></div>
-                  </a>
-                </li>
-                <li class="social-networks__item">
-                  <a class="social-networks__link" href="#">
-                    <div class="icon__facebook"></div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="scroll-down">
-              Scroll down
-              <div class="scroll-down__icon icon__arrow_downward"></div>
-            </div>
-          </div>
-        </section>
+                <Main_nav__link>
+                  <A_link href="#">Culture</A_link>
+                </Main_nav__link>
+              </Main_nav__list>
+            </Main_nav>
+            <Search>
+              <Search_icon src="#"></Search_icon>
+              <Search__form type="text" placeholder="Search" />
+            </Search>
+          </Header_content>
+        </Header_q>
+      </Cover_space>
 
-      </Body_html>
+      <Section_main>
+        <Main_title>
+          <Main_title__summary>Explore the Nature Beauty
+          </Main_title__summary>
+          <Main_title__text>Discover
+            <Main_title__text_regular>Wonderful Indonesia</Main_title__text_regular>
+          </Main_title__text>
+        </Main_title>
+        <Social_networks>
+          <Social_networks__title>Follow us</Social_networks__title>
+          <Social_networks__list>
+            <Social_networks__item>
+              <Social_networks__link href="#">
+                <Icon__instagram />
+              </Social_networks__link>
+            </Social_networks__item>
+            <Social_networks__item>
+              <Social_networks__link href="#">
+                <Icon__twitter />
+              </Social_networks__link>
+            </Social_networks__item>
+            <Social_networks__item>
+              <Social_networks__link href="#">
+                <Icon__facebook />
+              </Social_networks__link>
+            </Social_networks__item>
+          </Social_networks__list>
+        </Social_networks>
+        <Scroll_down_cont>
+          Scroll down
+          <Scroll_down />
+        </Scroll_down_cont>
+      </Section_main>
 
-    </div>
+    </Body_h>
   );
 }
 
